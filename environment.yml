@@ -1,0 +1,22 @@
+name: ml-interview-tutor
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - nodejs
+  - faiss-cpu=1.7.4
+  - pip:
+    - Django==4.2
+    - python-dotenv==1.0.0
+    - openai>=1.104.2,<2.0.0
+    - langchain>=0.2.12
+    - langchain-community>=0.2.12
+    - langchain-openai>=0.3.34
+    - langchain-chroma>=0.1.1
+    - chromadb>=0.5.4
+    - sentence-transformers==2.2.2
+    - uvicorn==0.22.0
+    - typing-extensions
+    - pytest
