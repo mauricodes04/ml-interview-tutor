@@ -1,7 +1,13 @@
-Create a `.env` file:
+## Environment Setup
 
+1. Generate a Django secret key:
+```bash
+python -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())"
 ```
-SECRET_KEY=your_django_secret_key_here
+
+2. Create a `.env` file with your keys:
+```
+SECRET_KEY=your_generated_secret_key
 OPENAI_API_KEY=sk-...
 ```
 
